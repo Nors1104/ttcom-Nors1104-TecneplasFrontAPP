@@ -1,0 +1,32 @@
+*{
+    margin: 10px;
+    padding: 10px;
+    //background-color: beige;
+    //border: solid black 1px;
+}
+p{border: solid black 1px;}
+.container{
+    margin: 0px;
+    padding: 10px;
+    display: grid;
+    grid-auto-rows: auto;
+    border: solid black 1px;
+   /*  grid-template-columns: repeat(auto-fill,minmax(22rem,1fr)); */
+
+}
+
+.texto{
+/*     margin-top: 20px;
+    margin-bottom: 20px;;
+    margin-left: 200px; */
+    font-size :30px;
+    font-weight: 600;
+    color:darkblue;
+}
+.formulario{
+    /*    
+    margin-left: 20px;
+    margin-right: 20px; */
+
+       
+}

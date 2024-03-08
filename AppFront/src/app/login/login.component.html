@@ -1,0 +1,29 @@
+
+<div class="container"> 
+    <div class="texto">LOGIN</div>
+    <form class="form-group row" [formGroup]="formGroup" (ngSubmit)="login()">
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="email" formControlName="email" >
+            <span *ngIf="!formGroup.controls['email'].pristine && !formGroup.controls['email'].valid" style="color:red">email invalido</span>
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Password</label>
+            <input type="password" formControlName="password">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+
+   <!--  <form class="form-group row" #loginForm="ngForm" (ngSubmit)="login(loginForm)"> -->
+<!--     <form #f="ngForm" (ngSubmit)="login(f)" novalidate>       
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" ngModel>
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" ngModel>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form> -->

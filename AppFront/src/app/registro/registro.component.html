@@ -1,0 +1,24 @@
+
+<div class="container"> 
+    <div class="texto">Registro</div>
+    <form class="form-group row" [formGroup]="formGroup" (ngSubmit)="registro()">
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input class="form-control" type="email" formControlName="email" >
+            <span *ngIf="!formGroup.controls['email'].pristine && !formGroup.controls['email'].valid" style="color:red">email invalido</span>
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Password</label>
+            <input class="form-control" type="password" formControlName="password">
+        </div>
+        <div class="mb-3">
+            <label for="id" class="form-label">SN Cruz</label>
+            <input class="form-control" type="text" formControlName="crossId">
+        </div>
+        <div class="mb-3">
+            <label for="id" class="form-label">Password Cruz</label>
+            <input class="form-control" type="text" formControlName="crossPassword">
+        </div>
+        <button type="submit" class="btn btn-primary">Registrarse</button>
+    </form>
+</div>
