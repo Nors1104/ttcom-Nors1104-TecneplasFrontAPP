@@ -24,16 +24,20 @@ export class LoginComponent {
 
     login(){
       if(this.formGroup.valid){
-        alert(this.formGroup.value.email+this.formGroup.value.password);
+        /* alert(this.formGroup.value.email+this.formGroup.value.password); */
         const email =this.formGroup.value.email;
         const password =this.formGroup.value.password;
 /*         const body = JSON.stringify({
-          email: "norman.merce@gmail.com",
+          email: "",
           passwod: "1234",
         }); */
-        $.post(`http://localhost:8000/users/login?email=${email}&password=${password}`, (data, status) => {
+        var datos;
+        $.post(`http://localhost:8000/users/login?email=${email}&password=${password}`, (data, status) => {   
+          /* console.log(data); */
           console.log(data);
+          datos =data;
         });
+        console.log(datos);
       }
       else{
         alert("Datos erroneos");

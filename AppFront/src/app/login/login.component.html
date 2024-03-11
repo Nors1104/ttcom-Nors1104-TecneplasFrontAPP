@@ -4,12 +4,12 @@
     <form class="form-group row" [formGroup]="formGroup" (ngSubmit)="login()">
         <div class="mb-3">
             <label for="exampleInputEmail1" class="form-label">Email address</label>
-            <input type="email" formControlName="email" >
+            <input class="form-control" type="email" formControlName="email" >
             <span *ngIf="!formGroup.controls['email'].pristine && !formGroup.controls['email'].valid" style="color:red">email invalido</span>
         </div>
         <div class="mb-3">
             <label for="exampleInputPassword1" class="form-label">Password</label>
-            <input type="password" formControlName="password">
+            <input class="form-control" type="password" formControlName="password">
         </div>
         <button type="submit" class="btn btn-primary">Submit</button>
     </form>

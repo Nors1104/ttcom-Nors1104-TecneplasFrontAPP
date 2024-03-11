@@ -11,6 +11,7 @@ p{border: solid black 1px;}
     display: grid;
     grid-auto-rows: auto;
     border: solid black 1px;
+    border-radius: 25px;
    /*  grid-template-columns: repeat(auto-fill,minmax(22rem,1fr)); */
 
 }
@@ -23,10 +24,7 @@ p{border: solid black 1px;}
     font-weight: 600;
     color:darkblue;
 }
-.formulario{
-    /*    
-    margin-left: 20px;
-    margin-right: 20px; */
-
-       
+.form-group {      
+    padding-right: 40px;
+    margin-top: 0px;    
 }
